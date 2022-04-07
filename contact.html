@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/air-jordan.png">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ETK2HG9T2M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ETK2HG9T2M');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,500&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/ccb6ee982c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="yay">
+    
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">History</a></li>
+                <li><a href="street.html">Street Fashion</a></li>
+                <li><a href="luxury.html">Luxury Fashion</a></li>
+                <li><a href="culture.html">Beyond Fashion</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 id="main">Contact!</h1>
+    </header>
+
+    <main>
+        <form action="https://formspree.io/f/xdobddyj" method="POST">
+            <fieldset>
+              <legend>Fill this out to receive a monthly sneakers newsletter, curated to your interests!</legend>
+          
+            <div class="question">
+                <label for="name_id">Name</label>
+                <input type="text" id = "name_id" name="name" required>
+            </div>   
+
+            <div class="question">
+                <label for="email_id">Email</label>
+                <input type="email" id = "email_id" name="email" required>
+            </div>
+
+            <div class="question">
+                <p>Style Preference(s):</p>
+                <label for="luxury_id">Luxury Sneakers</label>
+                <input type="checkbox" id="luxury_id" name="preference" value="luxury">
+                <br>
+                <label for="street_id">Streetwear Sneakers</label>
+                <input type="checkbox" id="street_id" name="preference" value="street">
+            </div>
+
+            <div class="question">
+                <label for="type_id">Favorite Sneaker Type?</label>
+                <input type="text" list="types" id="type_id" name="type">
+                <datalist id="types">
+                    <option value="Platform"></option>
+                    <option value="Low-Top"></option>
+                    <option value="High Top"></option>
+                    <option value="Athletic"></option>
+                </datalist>
+            </div>
+
+            <div class="question">
+                <label for="brand_id">Favorite Sneaker Brand(s)?</label>
+                <input type="text" id="brand_id" name="brand">
+            </div>
+
+            <div class="question">
+                <label for="size_id">Shoe Size? (EU)</label>
+                <input type="number" id="size_id" name="size">
+            </div>
+          
+            <div class="question">
+                <label for="msg">Anything else you want us to know?</label>
+                <textarea id = "msg" name="mesg"></textarea><br>
+            </div>
+
+            <div class="question" id="animation">
+                <input type="submit" value = "Submit">
+            </div>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Hazel Rosenberg</p>    
+    </footer>
+</body>
+</html>
