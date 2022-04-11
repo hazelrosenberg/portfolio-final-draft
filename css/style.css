@@ -3,6 +3,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    padding: 10px;
+}
+
 nav {
     text-align: center; 
     background-color: #ff5100;
@@ -298,7 +302,8 @@ a.skip:focus{
   
 .flip-card-back {
     /* background-color: #2980b9; */
-    color: black;
+    background-color: #ff5100;
+    color: #fff;
     transform: rotateY(180deg);
 }
 
@@ -381,14 +386,13 @@ a.skip:focus{
     }
 
     .lil_grid {
-        display: grid;
         grid-template-columns: 1fr;
         column-gap: 0;
     }
 
-    .lil_grid img {
+    /* .lil_grid img {
         width: 60%;
-    }
+    } */
 
     .for_order {
         order: 0;
@@ -396,15 +400,11 @@ a.skip:focus{
 
     /* flex */
     .flex_gallery {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 25px;
     }
 
     .flex_child {
-        display: flex;
         flex-direction: column;
         width: 30vw;
         align-self: baseline;
