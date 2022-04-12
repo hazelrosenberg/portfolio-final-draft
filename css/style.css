@@ -305,6 +305,7 @@ a.skip:focus{
     background-color: #ff5100;
     color: #fff;
     transform: rotateY(180deg);
+    font-weight: bold;
 }
 
 /* extra */
@@ -394,6 +395,10 @@ a.skip:focus{
     footer p {
         font-size: 20px;
     }
+
+    .flip-card-back p {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -439,6 +444,10 @@ a.skip:focus{
     }
 
     footer p {
+        font-size: 20px;
+    }
+
+    .flip-card-back p {
         font-size: 20px;
     }
 }
