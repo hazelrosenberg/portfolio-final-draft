@@ -390,6 +390,10 @@ a.skip:focus{
     .reverse {
         flex-direction: row-reverse;
     }
+
+    footer p {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 768px) {
