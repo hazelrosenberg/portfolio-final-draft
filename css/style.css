@@ -437,6 +437,10 @@ a.skip:focus{
         width: 30vw;
         align-self: baseline;
     }
+
+    footer p {
+        font-size: 20px;
+    }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
