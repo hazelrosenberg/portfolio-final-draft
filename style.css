@@ -1,0 +1,470 @@
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding: 10px;
+}
+
+nav {
+    text-align: center; 
+    background-color: #ff5100;
+    padding: 15px;
+}
+
+/* nav ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
+nav li {
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+}
+
+nav a:link,
+nav a:visited {
+    color: #fff;
+    text-decoration-line: none;
+}
+
+.active {
+    /* border-width: 6px;
+    border-color: #0f0;
+    border-style: groove groove ridge ridge; */
+    /* border-radius: 50px; */
+    border-bottom-width: 6px;
+    border-bottom-color: #0f0;
+    border-bottom-style: ridge;
+    display: inline;
+    /* padding: 8px; */
+}
+
+h1 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin:  30px 10px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 5px;
+}
+
+p,
+figcaption {
+    margin: 5px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* img:nth-of-type(even),
+figure:nth-child(odd) img {
+    margin: 10px;
+    border: 8px double #8c00ff;
+    display: inline-block;
+    width: 200px;
+    padding: 3px;
+    border-radius: 10px;
+} */
+
+/* img:nth-of-type(even):hover,
+figure:nth-child(odd) img:hover {
+    border: 4px solid #8c00ff;
+    zoom: 150%;
+    border-radius: 10px;
+} */
+
+/* img:nth-of-type(odd),
+figure:nth-child(even) img {
+    margin: 10px;
+    border: 8px double #0f0;
+    display: inline-block;
+    width: 200px;
+    padding: 3px;
+    border-radius: 10px;
+} */
+
+/* img:nth-of-type(odd):hover,
+figure:nth-child(even) img:hover {
+    border: 4px solid #0f0;
+    zoom: 150%;
+    border-radius: 10px;
+} */
+
+footer {
+    background-color: #ff5100;
+    font-weight: bold;
+    color: #fff;
+    padding: 32px 8px;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+}
+
+.skip:link,
+.skip:visited {
+    color: #000;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+#hidden {
+    display: none;
+}
+
+.basketball {
+    background-image: url(../images/basketball-court-vertical.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+}
+
+.basketball img {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.fa-cookie {
+    color: #8500ff;
+}
+
+/* Form Styling */
+label {
+    display: inline-block;
+    margin: 5px;
+}
+
+input {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+textarea {
+    margin: 5px;
+}
+
+.question {
+    margin: 15px;
+}
+
+fieldset {
+    font-size: 20px;
+}
+/* End of Form Styling */
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+  
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+@keyframes yay {
+    0% {background-color: auto;}
+    33% {background-color: #0f0}
+    66% {background-color: #8500ff}
+    100% {background-color: #fff}
+
+}
+
+#yay {
+    animation-name: yay;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}
+
+#animation {
+    animation: wiggle 2s linear infinite;
+}
+
+.flex_gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 99%;
+}
+
+.flex_child {
+    align-self: center;
+}
+
+.grid_gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_gallery figure {
+    width: 95%;
+    justify-self: center;
+}
+
+/* flip card */
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height:280px;
+    perspective: 1000px;
+    display: inline-block;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+  
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+}
+  
+.flip-card-back {
+    /* background-color: #2980b9; */
+    background-color: #ff5100;
+    color: #fff;
+    transform: rotateY(180deg);
+    font-weight: bold;
+}
+
+/* extra */
+.container {
+    display: block;
+    text-align: center;
+    /* flex-wrap: wrap; */
+    /* width: 90%; */
+    max-width: 800px;
+    border-width: 6px;
+    border-color: #0f0;
+    border-style: groove groove ridge ridge;
+    border-radius: 50px;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .container h1 {
+    font-size: 35px;
+    margin: 10px;
+  }
+  
+  button.select {
+    padding: 1em;
+    color: #532a7f;
+    font-size: 1.25em;
+    align-self: center;
+    border-radius: 30px;
+  }
+
+@media screen and (min-width: 609px) {
+    .basketball {
+        background-image: url(../images/basketball-court-horizontal.jpeg)
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /* nav */
+    nav li {
+        display: inline-block;
+        margin: 15px;
+    }
+
+    /* For tablets */
+    p,
+    figcaption {
+        font-size: 17px;
+    }
+
+    /* grid */
+    .grid_gallery {
+        row-gap: 25px;
+    }
+
+    .lil_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .grid_text {
+        grid-column: span 2;
+    }
+
+    .for_order {
+        order: -1;
+    }
+
+    /* flex */
+    .flex_gallery {
+        width: 100%;
+        gap: 25px;
+    }
+
+    .flex_child {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .flip-card-back p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* nav */
+    nav li {
+        display: inline;
+        margin: 1vw;
+        /* margin: 10px; */
+    }
+
+    /* For desktop */
+    p,
+    figcaption {
+        font-size: 15px;
+    }
+
+    /* grid */
+    .grid_gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 25px;
+        align-items: baseline;
+    }
+
+    .lil_grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .for_order {
+        order: 0;
+    }
+
+    /* flex */
+    .flex_gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex_child {
+        flex-direction: column;
+        width: 30vw;
+        align-self: baseline;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .flip-card-back p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    form, 
+    #animation {
+        animation: none;
+    }
+
+    a.skip {
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    .flip-card:hover .flip-card-inner,
+    .flip-card:focus .flip-card-inner {
+        transform: none;
+    }
+}
